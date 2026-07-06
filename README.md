@@ -54,7 +54,9 @@ AI_POWERED_PERSONAL_FARMING_ASSISTANT/
 
 ## Port
 Frontend:http://localhost:5173
+
 Backend:http://localhost:8080
+
 MySQL:3306 (default)
 
 ## Run Backend
@@ -134,11 +136,17 @@ The schema includes the required tables: users, roles, otp_verification, passwor
 ## Demo work Flow
 
 1.Start MySQL, backend, and frontend.
+
 2.Open the app in browser (localhost:5173).
+
 3.User login or register.
+
 4.Dashboard page opens.
+
 5.User sees farming modules like crop, weather, market, AI chat.
+
 6.User asks question in AI chat and gets response.
+
 7.System shows crop and weather suggestions.
 8.Data is saved in database and user can logout.
 
