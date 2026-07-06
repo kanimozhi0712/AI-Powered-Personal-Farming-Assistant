@@ -52,6 +52,7 @@ AI_POWERED_PERSONAL_FARMING_ASSISTANT/
 │
 └── README.md
 
+
 ## Port
 Frontend:http://localhost:5173
 
