@@ -1,0 +1,43 @@
+server:
+  port: ${SERVER_PORT:8080}
+spring:
+  application:
+    name: farm-assistant-api
+  datasource:
+    url: ${DB_URL:jdbc:h2:file:./data/farm_assistant;MODE=MySQL;DATABASE_TO_LOWER=TRUE;AUTO_SERVER=TRUE}
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:}
+    driver-class-name: ${DB_DRIVER:org.h2.Driver}
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 12MB
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: ${DB_DIALECT:org.hibernate.dialect.H2Dialect}
+    open-in-view: false
+app:
+  jwt:
+    secret: ${JWT_SECRET:change-this-development-secret-change-this-development-secret}
+    expiration-minutes: ${JWT_EXPIRATION_MINUTES:1440}
+  ai:
+    openai-api-key: ${OPENAI_API_KEY:}
+    openai-model: ${OPENAI_MODEL:gpt-4o-mini}
+    groq-api-key: ${GROQ_API_KEY:}
+    groq-model: ${GROQ_MODEL:llama-3.3-70b-versatile}
+    gemini-api-key: ${GEMINI_API_KEY:}
+    gemini-model: ${GEMINI_MODEL:gemini-2.0-flash}
+  integrations:
+    weather-api-key: ${WEATHER_API_KEY:}
+    market-api-key: ${MARKET_API_KEY:}
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
