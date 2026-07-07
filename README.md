@@ -149,6 +149,7 @@ The schema includes the required tables: users, roles, otp_verification, passwor
 6.User asks question in AI chat and gets response.
 
 7.System shows crop and weather suggestions.
+
 8.Data is saved in database and user can logout.
 
 ## Note:
