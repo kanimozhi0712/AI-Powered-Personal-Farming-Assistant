@@ -11,6 +11,7 @@ AI Powered Personal Farming Assistant is a full-stack smart agriculture platform
 - AI and integrations: Groq LLaMA 3.3, Weather API, Market Price API, Google OAuth, Email OTP placeholders
 
 ## Project Structure
+```
 AI_POWERED_PERSONAL_FARMING_ASSISTANT/
 │
 ├── frontend/
@@ -50,7 +51,7 @@ AI_POWERED_PERSONAL_FARMING_ASSISTANT/
 │   └── farm-assistant.postman_collection.json
 │
 └── README.md
-
+```
 
 ## Port
 Frontend:http://localhost:5173
